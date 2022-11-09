@@ -40,7 +40,7 @@ USERNAME: ${{ github.repository_owner }}
   - uses: Platane/snk@master
     id: snake-gif
     with:
-      github_user_name: camilamaraschin
+      github_user_name: ricardoegea
       svg_out_path: dist/github-contribution-grid-snake.svg
   - uses: crazy-max/ghaction-github-pages@v2.1.3
     with:
