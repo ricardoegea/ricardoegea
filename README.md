@@ -16,24 +16,23 @@ Here are some ideas to get you started:
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-@@ -1,23 +1,15 @@
 name: Generate Datas
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-  workflow_dispatch:
+schedule: # execute every 12 hours
+- cron: "* */12 * * *"
+workflow_dispatch:
 jobs:
-  build:
-    name: Jobs to update datas
-    runs-on: ubuntu-latest
-    steps:
-      # Summary Cards
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
+build:
+name: Jobs to update datas
+runs-on: ubuntu-latest
+steps:
+# Summary Cards
+- uses: actions/checkout@v2
+- uses: vn7n24fzkq/github-profile-summary-cards@release
+env:
+GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+with:
+USERNAME: ${{ github.repository_owner }}
 
       # Snake Animation
        - uses: Platane/snk@master
