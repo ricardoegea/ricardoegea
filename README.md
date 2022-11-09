@@ -32,7 +32,7 @@ steps:
 env:
 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 with:
-USERNAME: ${{ github.repository_owner }}
+RICARDOEGEA: ${{ github.repository_owner }}
 
       # Snake Animation
        - uses: Platane/snk@master
